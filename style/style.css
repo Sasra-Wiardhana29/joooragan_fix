@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --gold: #f9cc1b;
+  --blue: #5c6ee2;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem #0000001a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+header {
+  font-family: "Poppins", sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #eaeaea;
+  padding: 1.4rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+header .logo {
+  font-size: 2rem;
+}
+
+header .logo span {
+  color: var(--gold);
+}
+
+header .navbar a {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: var(--blue);
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+  color: var(--blue);
+  background: var(--gold);
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(219, 219, 219, 0.795),
+      rgb(255, 255, 255)
+    ),
+    url(/gambar/bg/bg\ 4.jpg);
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .container .wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.home .container .wrapper .content {
+  flex: 1 11 45rem;
+  z-index: 2;
+}
+
+.home .container .wrapper .image {
+  flex: 1 11 35rem;
+  z-index: 2;
+}
+
+.home .container .wrapper .image img {
+  width: 100%;
+  animation: phone 3.5s infinite linear;
+}
+
+@keyframes phone {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translateY(5vh);
+  }
+  0% {
+    transform: translatey(0);
+  }
+}
+
+.home .container .wrapper .content span {
+  color: var(--gold);
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home .container .wrapper .content h3 {
+  color: var(--blue);
+  font-size: 6rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.home .container .wrapper .content p {
+  color: var(--light-color);
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 1em;
+}
+
+.home .container .wrapper .content a {
+  color: var(--blue);
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  background: var(--gold);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.3rem;
+  font-weight: 700;
+}
+
+.uang {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 3rem;
+}
+.uang img {
+  width: 50px;
+  animation: uang 7s linear infinite;
+}
+
+.uang img:nth-child(1) {
+  animation-delay: 2s;
+}
+.uang img:nth-child(2) {
+  animation-delay: 3.5s;
+}
+.uang img:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.uang img:nth-child(4) {
+  animation-delay: 4s;
+}
+.uang img:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.uang img:nth-child(6) {
+  animation-delay: 5s;
+}
+.uang img:nth-child(7) {
+  animation-delay: 6.5s;
+}
+
+@keyframes uang {
+  0% {
+    transform: translatey(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(80vh);
+    opacity: 0;
+  }
+}
+/* .navbarTop {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #ccad50;
+}
+
+p {
+  color: #555;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25;
+  padding-right: 25px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-2 {
+  flex-basis: 45%;
+  min-width: 300px;
+}
+
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+} */
