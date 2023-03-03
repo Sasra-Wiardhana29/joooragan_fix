@@ -14,10 +14,12 @@
   color: #f9cc1b;
 }
 
-.bg-biru {
+/* w-5 h-5 sm:h-6 sm:w-6 */
+
+.bgr-biru {
   background-color: #5c6ee2;
 }
-.bg-gold {
+.bgr-gold {
   background-color: #f9cc1b;
 }
 
