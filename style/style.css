@@ -20,7 +20,6 @@
 
 html {
   font-size: 62.5%;
-  overflow: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
 }
@@ -40,9 +39,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 999;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   font-weight: 700;
+  z-index: 99;
 }
 
 header .logo {
@@ -73,7 +72,7 @@ header .navbar a:hover {
       rgba(219, 219, 219, 0.795),
       rgb(255, 255, 255)
     ),
-    url(/gambar/bg/bg\ 4.jpg);
+    url(../gambar/bg/bg4.jpg);
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
@@ -87,17 +86,17 @@ header .navbar a:hover {
   gap: 2rem;
   padding-top: 9rem;
   justify-content: space-between;
-  z-index: 2;
+
 }
 
 .home .container .wrapper .content {
   flex: 1 11 45rem;
-  z-index: 2;
+
 }
 
 .home .container .wrapper .image {
   flex: 1 11 35rem;
-  z-index: 2;
+
 }
 
 .home .container .wrapper .image img {
