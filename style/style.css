@@ -7,6 +7,20 @@
   --box-shadow: 0 0.5rem 1.5rem #0000001a;
 }
 
+.warna-biru {
+  color: #5c6ee2;
+}
+.warna-gold {
+  color: #f9cc1b;
+}
+
+.bg-biru {
+  background-color: #5c6ee2;
+}
+.bg-gold {
+  background-color: #f9cc1b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,9 +62,7 @@ header .logo {
   font-size: 2rem;
 }
 
-header .logo span {
-  color: var(--gold);
-}
+
 
 header .navbar a {
   font-size: 1.7rem;
