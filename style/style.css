@@ -3,8 +3,10 @@
 :root {
   --gold: #f9cc1b;
   --blue: #5c6ee2;
-  --light-color: #666;
-  --box-shadow: 0 0.5rem 1.5rem #0000001a;
+  --brown: #2B2B28;
+  --yellow: #E3B04B;
+  --gray: #575555;
+  --box-shadow: 0 0.5rem 1.5rem #0000001a; 
 }
 
 .warna-biru {
@@ -68,13 +70,13 @@ header .navbar a {
   font-size: 1.7rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
-  color: var(--blue);
+  color: var(--brown);
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  color: var(--blue); 
-  background: var(--gold);
+  color: var(--brown); 
+  background: var(--yellow);
 }
 
 .home {
@@ -129,13 +131,14 @@ header .navbar a:hover {
 }
 
 .home .container .wrapper .content span {
-  color: var(--gold);
+  color: var(--yellow);
   font-size: 3.5rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 
 .home .container .wrapper .content h3 {
-  color: var(--blue);
+  color: var(--brown);
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -147,13 +150,14 @@ header .navbar a:hover {
   padding: 0.5rem 0;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1em;
+  color: var(--gray);
 }
 
 .home .container .wrapper .content a {
-  color: var(--blue);
+  color: var(--brown);
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
-  background: var(--gold);
+  background: var(--yellow);
   padding: 0.5rem 1.5rem;
   border-radius: 1.3rem;
   font-weight: 700;
@@ -214,7 +218,7 @@ header .navbar a:hover {
 /* About Section */
 
 .about {
-  background-color: rgb(48, 47, 47);
+  background-color: var(--brown);
 }
 
 .about h3 {
@@ -222,17 +226,21 @@ header .navbar a:hover {
   color: white;
   font-size: 3.5rem;  
   font-family: "Montserrat", sans-serif;
-  padding-top: 10rem;
+  padding-top: 7rem;
   font-weight: 700;
 }
 
+.about h3 span {
+color: var(--yellow);
+}
+
 .about .title a {
-  color: #0d2ae2;
+  color: var(--brown);
   font-family: 'poppins', sans-serif;
   font-size: 1.7rem;
   font-weight: bold;
   padding: .5rem 1rem;
-  background-color: var(--gold);
+  background-color: var(--yellow);
   border-radius: .6rem;
   position: absolute;
   margin-left: 38%;
@@ -242,20 +250,17 @@ header .navbar a:hover {
 .about .content {
   margin-top: 9rem;
   display: flex;
-  gap: 90rem;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
-  padding-top: 9rem;
-  gap: 10rem;
-  justify-content: space-between;
+  padding-top: 5rem;
 }
 
 .content_detail {
-  width: 30rem;
+  width: 25rem;
   position: relative;
   align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 .about .content h4 {
@@ -279,7 +284,7 @@ font-weight: 700;
 }
 
 .about .content p {
-  color: white;
+  color: rgb(201, 198, 198);
   font-size: 1.4rem;
   line-height: 21px ;
   font-family: "poppins", sans-serif;
