@@ -70,7 +70,7 @@ header .navbar a {
 
 header .navbar a.active,
 header .navbar a:hover {
-  color: var(--blue);
+  color: var(--blue); 
   background: var(--gold);
 }
 
@@ -128,6 +128,7 @@ header .navbar a:hover {
   color: var(--blue);
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .home .container .wrapper .content p {
@@ -199,6 +200,7 @@ header .navbar a:hover {
     opacity: 0;
   }
 }
+
 .kontak {
   display: flex;
   flex-direction: column;
@@ -275,6 +277,85 @@ header .navbar a:hover {
   border-radius: 10px;
   font-size: 1.5rem;
 }
+
+
+
+/* About Section */
+
+.about {
+  background-color: rgb(48, 47, 47);
+}
+
+.about h3 {
+  text-align: center;
+  color: white;
+  font-size: 3.5rem;  
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10rem;
+  font-weight: 700;
+}
+
+.about .title a {
+  color: #0d2ae2;
+  font-family: 'poppins', sans-serif;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: .5rem 1rem;
+  background-color: var(--gold);
+  border-radius: .6rem;
+  position: absolute;
+  margin-left: 38%;
+  margin-top: 6rem;
+}
+
+.about .content {
+  margin-top: 9rem;
+  display: flex;
+  gap: 90rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 9rem;
+  gap: 10rem;
+  justify-content: space-between;
+}
+
+.content_detail {
+  width: 30rem;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
+.about .content h4 {
+color: var(--gold);
+font-size: 2.5rem;
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+}
+
+.about .content .content_detail {
+  margin-top: 6rem;
+ padding-bottom: 5rem;
+  
+}
+
+.about .content .content_detail img {
+  width: 40%;
+  margin-bottom: 4rem;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.about .content p {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 21px ;
+  font-family: "poppins", sans-serif;
+}
+
+
+
 
 /* .navbarTop {
   display: flex;
