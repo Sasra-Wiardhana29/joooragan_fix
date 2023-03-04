@@ -246,6 +246,7 @@ header .navbar a:hover {
 }
 .kontak-inputs {
   font-size: 1.5rem;
+  color: white;
 }
 .kontak-inputs-flex {
   display: flex;
