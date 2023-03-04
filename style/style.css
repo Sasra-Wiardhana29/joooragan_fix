@@ -323,7 +323,7 @@ header .navbar a:hover {
   align-items: center;
   padding-top: 9rem;
   gap: 10rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 @media screen and (max-width:390px){
@@ -342,7 +342,7 @@ header .navbar a:hover {
     margin: auto;
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (min-width: 768px){
   .about .content {
     flex-direction: row;
   }
@@ -350,12 +350,12 @@ header .navbar a:hover {
     flex-wrap: wrap;
   }
   .content_detail {
-    width: 3rem;
+    width: 10rem;
   }
 }
 
 .content_detail {
-  width: 30rem;
+  width: 20rem;
   align-items: center;
   text-align: center;
 }
