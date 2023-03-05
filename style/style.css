@@ -3,8 +3,11 @@
 :root {
   --gold: #f9cc1b;
   --blue: #5c6ee2;
-  --light-color: #666;
-  --box-shadow: 0 0.5rem 1.5rem #0000001a;
+  --brown: #2B2B28;
+  --yellow: #E3B04B;
+  --brown-light: #645b4d;
+  --gray: #575555;
+  --box-shadow: 0 0.5rem 1.5rem #0000001a; 
 }
 
 .warna-biru {
@@ -14,10 +17,12 @@
   color: #f9cc1b;
 }
 
-.bg-biru {
+/* w-5 h-5 sm:h-6 sm:w-6 */
+
+.bgr-biru {
   background-color: #5c6ee2;
 }
-.bg-gold {
+.bgr-gold {
   background-color: #f9cc1b;
 }
 
@@ -38,7 +43,7 @@ html {
 }
 
 section {
-  padding: 2rem 9%;
+  padding: 2rem 6%;
 }
 
 header {
@@ -61,25 +66,29 @@ header .logo {
   font-size: 2rem;
 }
 
+header .logo h3 {
+  font-size: 2rem;
+  color: var(--yellow);
+}
+
+
 header .navbar a {
   font-size: 1.7rem;
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
-  color: var(--blue);
+  color: var(--brown);
 }
 
 header .navbar a.active,
 header .navbar a:hover {
-  color: var(--blue); 
-  background: var(--gold);
+  color: var(--brown); 
+  background: var(--yellow);
 }
 
 .home {
   width: 100%;
-  height: 100vh;
   background-image: linear-gradient(rgba(219, 219, 219, 0.795), rgb(255, 255, 255)), url(../gambar/bg/bg4.jpg);
   position: relative;
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -119,13 +128,14 @@ header .navbar a:hover {
 }
 
 .home .container .wrapper .content span {
-  color: var(--gold);
+  color: var(--yellow);
   font-size: 3.5rem;
+  font-weight: 500;
   font-family: "Montserrat", sans-serif;
 }
 
 .home .container .wrapper .content h3 {
-  color: var(--blue);
+  color: var(--brown);
   font-size: 6rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -137,13 +147,14 @@ header .navbar a:hover {
   padding: 0.5rem 0;
   font-family: "Montserrat", sans-serif;
   margin-bottom: 1em;
+  color: var(--gray);
 }
 
 .home .container .wrapper .content a {
-  color: var(--blue);
+  color: #fff;
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
-  background: var(--gold);
+  background: var(--blue);
   padding: 0.5rem 1.5rem;
   border-radius: 1.3rem;
   font-weight: 700;
@@ -164,24 +175,31 @@ header .navbar a:hover {
 
 .uang img:nth-child(1) {
   animation-delay: 2s;
+  z-index: 1;
 }
 .uang img:nth-child(2) {
   animation-delay: 3.5s;
+  z-index: 1;
 }
 .uang img:nth-child(3) {
   animation-delay: 1.5s;
+  z-index: 1;
 }
 .uang img:nth-child(4) {
   animation-delay: 4s;
+  z-index: 2;
 }
 .uang img:nth-child(5) {
   animation-delay: 0.5s;
+  z-index: 2;
 }
 .uang img:nth-child(6) {
   animation-delay: 5s;
+  z-index: 2;
 }
 .uang img:nth-child(7) {
   animation-delay: 6.5s;
+  z-index: 2;
 }
 
 @keyframes uang {
@@ -196,7 +214,7 @@ header .navbar a:hover {
     opacity: 1;
   }
   100% {
-    transform: translatey(80vh);
+    transform: translatey(90vh);
     opacity: 0;
   }
 }
@@ -209,9 +227,7 @@ header .navbar a:hover {
   color: white;
   font-family: "Poppins", sans-serif;
 }
-.kontak-konten {
-  padding-left: 15rem;
-}
+
 .kontak > h3 {
   font-size: 3.5rem;
   font-weight: bold;
@@ -219,6 +235,11 @@ header .navbar a:hover {
 .kontak > p {
   font-size: 1.5rem;
 }
+
+.kontak-konten i, .kontak-konten h4 {
+color: var(--yellow);
+}
+
 .kontak .kontak-container {
   margin-top: 20px;
   display: grid;
@@ -233,10 +254,11 @@ header .navbar a:hover {
   margin-top: 10px;
 }
 .kontak-information .contact_icon {
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 .kontak-information .kontak-title {
   font-size: 1.7rem;
+  font-weight: bold;
 }
 .kontak-information .kontak-subtitle {
   font-size: 1.5rem;
@@ -256,27 +278,84 @@ header .navbar a:hover {
   display: flex;
   align-items: center;
   color: white;
-  border: 1px solid white;
+  border: 1px solid var(--yellow);
   padding: 4px 10px;
   border-radius: 10px;
   margin-bottom: 2rem;
+  background-color: #2b2b28;
+  
 }
 .kontak-content > input {
-  background-color: #2b2b28;
   width: 100%;
+  background-color: #2b2b28;
+  
 }
 .kontak-content > textarea {
-  background-color: #2b2b28;
   width: 100%;
+  background-color: #2b2b28;
 }
+
 .btn-form{
   width: 15rem;
-  padding: 10px 20px;
+  padding: 10px 17px;
   border: none;
-  background-color: #E3B04B;
+  background-color: var(--yellow);
   color: white;
   border-radius: 10px;
   font-size: 1.5rem;
+  font-weight: 700;
+}
+.btn-form:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+  transition: all 0.50s ease 0s;
+}
+
+
+@media screen and (max-width:400px) {
+  .kontak > .kontak-container {
+    grid-template-columns: 1fr;
+    
+  }
+  .kontak-content {
+    border: 1px solid white;
+  }
+
+  .home .container .wrapper{
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+  }
+  .home .container .wrapper .content span {
+    font-size: 2rem;
+  }
+
+  .home .container .wrapper .content h3 {
+    font-size: 4rem;
+  }
+  .home .container .wrapper .content p {
+    font-size: 1.4rem;
+  }
+
+  .home .container .wrapper .content a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    background: var(--blue);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.3rem;
+    font-weight: 700;
+  }
+
+  .home .container .wrapper .image img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    bottom: .5rem;
+  }
+
+  .home .uang img{
+    width: 10%;
+  }
 }
 
 
@@ -284,7 +363,7 @@ header .navbar a:hover {
 /* About Section */
 
 .about {
-  background-color: rgb(48, 47, 47);
+  background-color: var(--brown);
 }
 
 .about h3 {
@@ -292,40 +371,68 @@ header .navbar a:hover {
   color: white;
   font-size: 3.5rem;  
   font-family: "Montserrat", sans-serif;
-  padding-top: 10rem;
+  padding-top: 7rem;
   font-weight: 700;
 }
 
+.about h3 span {
+color: var(--yellow);
+}
+
 .about .title a {
-  color: #0d2ae2;
+  color: var(--brown);
   font-family: 'poppins', sans-serif;
   font-size: 1.7rem;
   font-weight: bold;
   padding: .5rem 1rem;
-  background-color: var(--gold);
+  background-color: var(--yellow);
   border-radius: .6rem;
-  position: absolute;
-  margin-left: 38%;
-  margin-top: 6rem;
+  margin: 0 auto !important;
 }
 
 .about .content {
-  margin-top: 9rem;
+  margin-top: -5rem;
   display: flex;
-  gap: 90rem;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  align-items: center;
   padding-top: 9rem;
   gap: 10rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width:390px){
+  .about h3 {
+    font-size: 2.5rem;
+  }
+  .about .title {
+    margin-top: -6rem;
+  }
+
+  .about  .content {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .content_detail {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px){
+  .about .content {
+    flex-direction: row;
+  }
+  .content {
+    flex-wrap: wrap;
+  }
+  .content_detail {
+    width: 10rem;
+  }
 }
 
 .content_detail {
-  width: 30rem;
-  position: relative;
+  width: 20rem;
   align-items: center;
   text-align: center;
+  margin: auto;
 }
 
 .about .content h4 {
@@ -349,10 +456,82 @@ font-weight: 700;
 }
 
 .about .content p {
-  color: white;
+  color: rgb(201, 198, 198);
   font-size: 1.4rem;
   line-height: 21px ;
   font-family: "poppins", sans-serif;
+}
+
+.franchise-title {
+  font-family: "Montserrat", sans-serif;
+}
+
+.franchise-subtitle {
+    font-family: 'poppins', sans-serif;
+} 
+
+.product-title {
+  font-family: 'poppins', sans-serif;
+}
+
+.product-description { 
+  font-family: 'poppins', sans-serif;
+}
+
+.product-wa > .nomor { 
+  font-family: 'poppins', sans-serif;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  margin-top: 2px; 
+  margin-left: 4px;
+}
+
+.button-ykp {
+  font-size: 1.7rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background: var(--yellow);
+  font-weight: bold;
+}
+
+/* Footer Section */
+.footer{
+  background-color: var(--yellow);
+  font-family: 'poppins', sans-serif;
+  text-align: center;
+}
+.footer_links{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.7rem;
+}
+.footer_links >li:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+  transition: all 0.50s ease 0s;
+  color: black;
+}
+.footer .footer_socials{
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: white;
+}
+.footer .footer_socials > a:hover{
+  cursor: pointer;
+  transform:scale(1.1);
+  transition: all 0.50s ease 0s;
+  color: grey;
+}
+.footer > p{
+  color: white;
+  font-size: 1rem;
 }
 
 
